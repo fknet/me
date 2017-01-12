@@ -1,0 +1,30 @@
+@import "color";
+@import "sizes";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  background-color: $backgroundColor;
+  color: $fontColor;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+	text-decoration: underline;
+  }
+}
+
+@import "header";
+@import "section";
+@import "footer";

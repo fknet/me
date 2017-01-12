@@ -1,0 +1,27 @@
+footer {
+  background-color: $footerBackgroundColor;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 3px solid $footerColor;
+  padding: 5px 0;
+
+  a {
+	color: $footerColor;
+	line-height: 20px;
+	display: block;
+  }
+
+  ul {
+	max-width: $maxWidth;
+	padding: 0 20px;
+	margin: 0 auto;
+	box-sizing: border-box;
+
+	li {
+	  padding:5px 0;
+	  width: 50%;
+	  float: left;
+	}
+  }
+}
