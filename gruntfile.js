@@ -32,6 +32,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
 
     grunt.registerTask('default', ['clean', 'sass:local', 'watch']);
-    grunt.registerTask('deploy', ['clean', 'sass:local']
+    grunt.registerTask('deploy', ['clean', 'sass:local']);
 
 };
