@@ -1,0 +1,19 @@
+{
+  "name": "Fabian Klose",
+  "short_name": "Fabian",
+  "start_url": ".",
+  "lang": "en",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f1f1f1",
+  "theme_color": "#3663de",
+  "orientation": "portrait",
+  "description": "team lead web developer",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
