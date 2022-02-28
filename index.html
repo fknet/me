@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" amp>
+<html lang="en">
 <head>
     <title>Fabian Klose</title>
     <base target="_blank">
@@ -20,10 +20,7 @@
     <link rel="canonical" href="https://www.fabian-klose.de">
     <link rel="manifest" href="manifest.json">
     <link rel="shortcut icon" href="favicon.ico">
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    <style amp-custom>
+    <style>
         :root {
             --bg: #f1f1f1;
             --primary: #333;
@@ -73,6 +70,16 @@
             text-decoration: none;
         }
 
+        a img {
+            width: 32px;
+            height: 32px;
+        }
+
+        picture img {
+            width: 150px;
+            height: 150px;
+        }
+
         .social {
             background-color: var(--social);
         }
@@ -85,9 +92,10 @@
 <body>
 <section>
     <div>
-        <amp-img src="fabian-klose.webp" width="150" height="150" layout="fixed" alt="Fabian Klose">
-            <amp-img fallback src="fabian-klose.png" width="150" height="150" alt="Fabian Klose"></amp-img>
-        </amp-img>
+        <picture>
+            <source srcset="fabian-klose.webp" type="image/webp">
+            <img src="fabian-klose.png" alt="Fabian Klose">
+        </picture>
         <h1>Fabian Klose</h1>
         <p>
             Web Developer, Photographer,<br>
@@ -95,22 +103,22 @@
             Munich, Germany
         </p>
         <a href="//xing.com/profile/Fabian_Klose5" title="Xing profile" rel="noopener">
-            <amp-img src="xing.png" width="32" height="32" layout="fixed" alt="Xing" class="social"></amp-img>
+            <img src="xing.png" alt="Xing" class="social"/>
         </a>
         <a href="//linkedin.com/in/fabianklose" title="LinkedIn profile" rel="noopener">
-            <amp-img src="linkedin.png" width="32" height="32" layout="fixed" alt="LinkedIn" class="social"></amp-img>
+            <img src="linkedin.png" alt="LinkedIn" class="social"/>
         </a>
         <a href="//facebook.com/klose.fabian" title="Facebook profile" rel="noopener">
-            <amp-img src="facebook.png" width="32" height="32" layout="fixed" alt="Facebook" class="social"></amp-img>
+            <img src="facebook.png" alt="Facebook" class="social"/>
         </a>
         <a href="//instagram.com/fklose_" title="Instagram profile" rel="noopener">
-            <amp-img src="instagram.png" width="32" height="32" layout="fixed" alt="Instagram" class="social"></amp-img>
+            <img src="instagram.png" alt="Instagram" class="social"/>
         </a>
         <a href="//twitter.com/fklose_" title="Twitter profile" rel="noopener">
-            <amp-img src="twitter.png" width="32" height="32" layout="fixed" alt="Twitter" class="social"></amp-img>
+            <img src="twitter.png" alt="Twitter" class="social"/>
         </a>
         <a href="//github.com/fknet" title="GitHub profile" rel="noopener">
-            <amp-img src="github.png" width="32" height="32" layout="fixed" alt="GitHub" class="social"></amp-img>
+            <img src="github.png" alt="GitHub" class="social"/>
         </a>
     </div>
 </section>
@@ -130,20 +138,5 @@
         ]
     }
 </script>
-<amp-analytics type="googleanalytics">
-    <script type="application/json">
-        {
-            "vars": {
-                "account": "UA-107761842-3"
-            },
-            "triggers": {
-                "trackPageview": {
-                    "on": "visible",
-                    "request": "pageview"
-                }
-            }
-        }
-    </script>
-</amp-analytics>
 </body>
 </html>
